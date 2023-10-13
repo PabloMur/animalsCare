@@ -27,7 +27,7 @@ const PetCardComp = ({ nombre, zona, image, id, owner }) => {
           <CustomText variant="p">Zona: {zona}</CustomText>
         </div>
         <button className={css.infoButton} onClick={handleClick}>
-          <CustomText variant="p">Tengo informacion</CustomText>
+          <CustomText variant="p">Contactar al reportador</CustomText>
         </button>
       </div>
     </div>

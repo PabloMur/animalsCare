@@ -22,3 +22,11 @@
   margin: 30px auto;
   padding: 10px;
 }
+
+.ul {
+  display: flex;
+}
+
+li {
+  list-style: none;
+}

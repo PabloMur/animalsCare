@@ -1,4 +1,4 @@
-import { petsAround, petsAroundLength } from "atoms/userAtoms";
+import { petsAround } from "atoms/userAtoms";
 import { useGoTo } from "hooks/uiHooks";
 import React from "react";
 import { useRecoilValue } from "recoil";
