@@ -21,7 +21,7 @@ const Banner = () => {
             familia o asistir a un animal abandonado echa un vistazo!
           </CustomText>
         </div>
-        <CustomButton onClick={MostrarPopup}>Buscar Mascotas</CustomButton>
+        <CustomButton onClick={MostrarPopup}>Buscar Animales</CustomButton>
       </div>
       <div className={css.bannerImage}></div>
     </div>

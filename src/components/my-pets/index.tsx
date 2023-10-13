@@ -42,7 +42,7 @@ const MyPetsContainer = () => {
 
   return (
     <div className={css.root}>
-      <CustomText variant="title">Mis Mascotas</CustomText>
+      <CustomText variant="title">Mis Animales Reportados</CustomText>
       <div className={css.petsContainer}>
         <PetList />
       </div>

@@ -57,9 +57,6 @@ export const MyPetCardComp = ({
           <CustomText variant="p">Actualmente: {status}</CustomText>
         </div>
         <div>
-          <button className={css.editButton} onClick={editPet}>
-            <p className={css.buttonText}>Editar Mascota</p>
-          </button>
           <button className={css.deletePet} onClick={eliminar}>
             <p className={css.buttonText}>Reportar como encontrada</p>
           </button>

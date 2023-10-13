@@ -41,7 +41,7 @@ const PetsAround = () => {
 
   return (
     <div className={css.root}>
-      <CustomText variant="title">Mascotas Cerca</CustomText>
+      <CustomText variant="title">Animales Cerca</CustomText>
       <div className={css.petContainer}>
         <PetList />
       </div>
