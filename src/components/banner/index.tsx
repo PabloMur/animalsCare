@@ -5,7 +5,6 @@ import { CustomButton } from "ui/buttons";
 import { popupPermissionCardState } from "atoms/uiAtoms";
 import { useSetRecoilState } from "recoil";
 
-
 const Banner = () => {
   const setValue = useSetRecoilState(popupPermissionCardState);
   const MostrarPopup = () => {
@@ -15,11 +14,11 @@ const Banner = () => {
   return (
     <div className={css.root}>
       <div className={css.text}>
-        <CustomText variant="title">Mascotas Perdidas Cerca Tuyo</CustomText>
+        <CustomText variant="title">Reporta un animal abandonado</CustomText>
         <div className={css.pcontainer}>
           <CustomText variant="paraph">
             Con esta app vas a poder ayudar a mascotas a reencontrarse con su
-            familia. echa un vistazo!
+            familia o asistir a un animal abandonado echa un vistazo!
           </CustomText>
         </div>
         <CustomButton onClick={MostrarPopup}>Buscar Mascotas</CustomButton>

@@ -1,47 +1,13 @@
 import React from "react";
 import css from "./styles.css";
-import { ReportNameField, TextField } from "ui/text-field";
-import { CustomButton } from "ui/buttons";
+import { ReportNameField } from "ui/text-field";
 import { CustomText } from "ui/custom-text";
-import { MapboxPetsAround, MapboxReport } from "components/mapbox";
+import { MapboxReport } from "components/mapbox";
 import { ReportButton } from "ui/buttons";
 import { DropzoneComp } from "components/dropzone";
-import {
-  reportPetCordsLat,
-  reportPetCordsLng,
-  reportPetName,
-} from "atoms/userAtoms";
-import { useRecoilValue } from "recoil";
-import {
-  useGetPetZone,
-  useGetterImageDataURL,
-  useReportNewPet,
-  useUserEmail,
-} from "hooks";
 
 const ReportMaker = () => {
-  const createPetFunction = useReportNewPet();
-  const userEmail = useUserEmail();
-  const petname = useRecoilValue(reportPetName);
-  const imageDataUrl = useGetterImageDataURL();
-  const petZone = useGetPetZone();
-  const petLat = useRecoilValue(reportPetCordsLat);
-  const petLng = useRecoilValue(reportPetCordsLng);
-
-  let mascota = {
-    fullname: petname,
-    ownerEmail: userEmail,
-    zone: petZone,
-    lat: petLat,
-    lng: petLng,
-    state: "perdido",
-    image: imageDataUrl,
-  };
-  function onSubmit(e) {
-    e.preventDefault();
-    createPetFunction(mascota);
-    console.log(mascota);
-  }
+  function onSubmit(e) {}
 
   function Mostrar() {
     console.log("mostrar algo");
@@ -49,12 +15,57 @@ const ReportMaker = () => {
 
   return (
     <div className={css.root}>
-      <CustomText variant="title">Reportar Mascota</CustomText>
+      <CustomText variant="title">Reportar Mascota Abandonada</CustomText>
       <form className={css.form} onSubmit={onSubmit}>
         <label className={css.label}>
-          <CustomText variant="p">El nombre de tu mascota</CustomText>
+          <CustomText variant="p">Nombre del animal</CustomText>
           <ReportNameField></ReportNameField>
         </label>
+        <label className={css.label}>
+          <CustomText variant="p">Raza</CustomText>
+          <ReportNameField></ReportNameField>
+        </label>
+        <label className={css.label}>
+          <CustomText variant="p">Especie animal</CustomText>
+          <ReportNameField></ReportNameField>
+        </label>
+        <label className={css.label}>
+          <CustomText variant="p">Comportamiento</CustomText>
+          <ReportNameField></ReportNameField>
+        </label>
+        <label className={css.label}>
+          <CustomText variant="p">Detalle de comportamiento</CustomText>
+          <ReportNameField></ReportNameField>
+        </label>
+        <label className={css.label}>
+          <CustomText variant="p">Vacunas</CustomText>
+          <ReportNameField></ReportNameField>
+        </label>
+        <label className={css.label}>
+          <CustomText variant="p">Dosis</CustomText>
+          <ReportNameField></ReportNameField>
+        </label>
+        <label className={css.label}>
+          <CustomText variant="p">Fecha de aplicacion</CustomText>
+          <input type="date" className={css.inputDate} />
+        </label>
+        <label className={css.label}>
+          <CustomText variant="p">Emfermedades</CustomText>
+          <ReportNameField></ReportNameField>
+        </label>
+        <label className={css.label}>
+          <CustomText variant="p">Detalle de emfermedad</CustomText>
+          <ReportNameField></ReportNameField>
+        </label>
+        <label className={css.label}>
+          <CustomText variant="p">Nombre de sintoma</CustomText>
+          <ReportNameField></ReportNameField>
+        </label>
+        <label className={css.label}>
+          <CustomText variant="p">Detalle del sintoma</CustomText>
+          <ReportNameField></ReportNameField>
+        </label>
+
         <label className={css.label}>
           <CustomText variant="p">Imagen de tu mascota</CustomText>
           <DropzoneComp></DropzoneComp>
@@ -65,8 +76,9 @@ const ReportMaker = () => {
             <MapboxReport></MapboxReport>
           </div>
         </label>
-        <ReportButton variant="makeReport" onClick={Mostrar}></ReportButton>
+
         <ReportButton variant="cancelReport" onClick={Mostrar}></ReportButton>
+        <ReportButton variant="makeReport" onClick={Mostrar}></ReportButton>
       </form>
     </div>
   );

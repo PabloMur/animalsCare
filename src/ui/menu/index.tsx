@@ -19,11 +19,11 @@ const Menu = () => {
   return (
     <nav>
       <ul className={css.root}>
-        <MenuButton route="/userdata">My Data</MenuButton>
-        <MenuButton route="/my-pets">My Pets</MenuButton>
-        <MenuButton route="/my-reports">My Reports</MenuButton>
-        <LoginButton route="/login">Login</LoginButton>
-        <SignupButton route="/signup">Signup</SignupButton>
+        <MenuButton route="/userdata">Mis Datos</MenuButton>
+        <MenuButton route="/my-pets">Mis Reportes</MenuButton>
+        <MenuButton route="/my-reports">Hacer un reporte</MenuButton>
+        <LoginButton route="/login">Ingresar</LoginButton>
+        <SignupButton route="/signup">Registrate</SignupButton>
         <LogoutButton onClick={logOut} />
       </ul>
     </nav>

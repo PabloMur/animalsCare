@@ -63,7 +63,7 @@ export const LogoutButton = ({ onClick }) => {
       {userLogged && (
         <Link className={css.linkLogin} to="/">
           <button className={css.logout} onClick={onClick}>
-            <CustomText variant="p">Logout</CustomText>
+            <CustomText variant="p">Salir</CustomText>
           </button>
         </Link>
       )}

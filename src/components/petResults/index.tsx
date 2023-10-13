@@ -16,7 +16,7 @@ const PetResults = () => {
   return (
     <div className={css.container}>
       <div>
-        <CustomText variant="p">Mascotas Cerca: {petResults.length}</CustomText>
+        <CustomText variant="p">Animales Cerca: {petResults.length}</CustomText>
       </div>
       <button className={css.button} onClick={handleClick}>
         <CustomText variant="p">Ver Resultados</CustomText>
