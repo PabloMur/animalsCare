@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  /*Paleta de colores*/
+  --white: #ffffff;
+  --dark-bg-color: black;
+  --yellow-bg-color: #ffbe0b;
+  --orange: #fb5607;
+  --blue: #3a86ff;
+  --purple: #8338ec;
+  --the-purple: #592e83;
+  --middle-purple: #9984d4;
+  --light-purple: #caa8f5;
+  --clarito: #ffe5b5;
+  --dark-purple: #230c33;
+  --verde: #00ff40;
+  --danger: rgb(182, 19, 19);
+  /*Fuete Principal*/
+  --ui: "Kantumruy Pro", sans-serif;
+  --titulos: "DM Serif Display", serif;
+  /*Tamaños de Fuente*/
+  --titulos-size: 40px;
+  --ui-size: 20px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.mapboxgl-ctrl-bottom-right {
+  display: none;
+}
+
+.mapboxgl-popup-content {
+  background-color: #ffffff00;
+}

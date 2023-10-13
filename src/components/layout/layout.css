@@ -1,0 +1,8 @@
+.root {
+  background: linear-gradient(
+    60deg,
+    rgb(71, 240, 85),
+    var(--purple),
+    rgba(255, 0, 221, 0.616)
+  );
+}

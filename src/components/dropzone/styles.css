@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+.root {
+  background-color: antiquewhite;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.dragZone {
+  border-radius: 4px;
+  border: dashed 2px rgba(0, 0, 0, 0.603);
+  max-width: 100px;
+  min-width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  box-sizing: border-box;
+  text-align: center;
+}

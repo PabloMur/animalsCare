@@ -1,0 +1,49 @@
+{
+  "name": "components",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "PabloMur <polillomurillo@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.20.2",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
+    "@types/dropzone": "^5.7.4",
+    "@types/mapbox-gl": "^2.7.10",
+    "@types/node": "^18.11.9",
+    "@types/react-dom": "^18.0.10",
+    "cross-env": "^7.0.3",
+    "file-loader": "^6.2.0",
+    "image-webpack-loader": "^4.2.0",
+    "svg-inline-loader": "^0.8.2",
+    "ts-loader": "^9.4.1",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.0"
+  },
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack",
+    "build": "cross-env NODE_ENV=production webpack",
+    "start": "live-server"
+  },
+  "dependencies": {
+    "@mapbox/mapbox-gl-geocoder": "^5.0.1",
+    "@types/dotenv": "^8.2.0",
+    "@types/react": "^18.0.25",
+    "css-loader": "^6.7.2",
+    "dotenv": "^16.0.3",
+    "dropzone": "^6.0.0-beta.2",
+    "firebase-tools": "^11.16.1",
+    "live-server": "^1.1.0",
+    "mapbox-gl": "^2.11.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.3",
+    "recoil": "^0.7.6",
+    "recoil-persist": "^4.2.0",
+    "style-loader": "^3.3.1",
+    "tsconfig-paths-webpack-plugin": "^4.0.0",
+    "typescript": "^4.9.3"
+  }
+}

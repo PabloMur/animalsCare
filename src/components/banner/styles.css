@@ -1,0 +1,58 @@
+.root {
+  height: 80vh;
+  width: 90%;
+  box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
+  margin: 5vh auto;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border: 1.5px solid rgba(209, 213, 219, 0.3);
+}
+
+.bannerImage {
+  height: 100%;
+  width: 40%;
+  border-radius: 20px;
+  background-image: url("../../assets/park.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.text {
+  display: flex;
+  width: 60%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.false {
+  background-color: aqua;
+  height: 100px;
+  width: 300px;
+}
+
+.pcontainer {
+  max-width: 500px;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,10 @@
+.root{
+    background-color: var(--clarito);
+    min-height: 79vh;
+    width: 90%;
+    margin: 5vh auto;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

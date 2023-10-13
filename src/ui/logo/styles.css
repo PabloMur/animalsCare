@@ -1,0 +1,20 @@
+.root{
+    display: flex;
+    align-items: center;
+}
+
+.link{
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    height: 70%;
+}
+
+.appName{
+    color: white;
+    /*font-family: 'Poppins', sans-serif;*/
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-size: 25px;
+    padding-left: 5px;
+}

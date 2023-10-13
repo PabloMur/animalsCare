@@ -1,0 +1,11 @@
+.root {
+  background-color: var(--verde);
+  height: 23px;
+  width: 23px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid black;
+}

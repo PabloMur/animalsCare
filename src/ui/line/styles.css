@@ -1,0 +1,22 @@
+.line{
+    height: .7vh;
+    width: 100%;
+    background-color: var(--clarito);
+    border-radius: 3px;
+}
+
+.leftLine{
+    height: .7vh;
+    width: 100%;
+    background-color: var(--clarito);
+    border-radius: 3px;
+    transform: rotate(45deg);
+    position: absolute;
+}
+.rightLine{
+    height: .7vh;
+    width: 100%;
+    background-color: var(--clarito);
+    border-radius: 3px;
+    transform: rotate(-45deg);
+}

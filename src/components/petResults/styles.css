@@ -1,0 +1,24 @@
+.container {
+  min-height: 50px;
+  width: 300px;
+  background-color: white;
+  position: absolute;
+  bottom: 20px;
+  right: 5.8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.button {
+  background-color: black;
+  color: white;
+  border: none;
+  width: 95%;
+  margin: 4px auto;
+  height: 40px;
+  border-radius: 4px;
+}

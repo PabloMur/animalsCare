@@ -1,0 +1,112 @@
+.root {
+  border-radius: 4px;
+  padding: 4px 10px;
+  text-align: center;
+  border: none;
+  font-size: 20px;
+  background-color: transparent;
+  color: white;
+}
+
+.customButton {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 2vh 17px;
+  font-size: var(--ui-size);
+  border-radius: 50px;
+}
+
+.login {
+  /*background-color: var(--middle-purple);*/
+  background-color: var(--verde);
+  color: var(--dark-purple);
+  padding: 2px 17px;
+  border: none;
+  border-radius: 10px;
+  height: 6vh;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logout {
+  /*background-color: var(--middle-purple);*/
+  background-color: var(--yellow-bg-color);
+  color: var(--dark-purple);
+  padding: 2px 17px;
+  border: none;
+  border-radius: 10px;
+  height: 6vh;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup {
+  background-color: var(--dark-purple);
+  color: white;
+  padding: 2px 17px;
+  border: none;
+  border-radius: 10px;
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.linkLogin {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  animation: fadein 0.8s ease;
+  cursor: pointer;
+}
+
+.MainButton {
+  background-color: black;
+  border: none;
+  padding: 10px 10px;
+  margin: 5px 0;
+  color: white;
+  width: 100%;
+  border-radius: 4px;
+  font-size: 18px;
+  animation: fadein 0.8s ease;
+}
+
+.makeReport {
+  background-color: var(--verde);
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.cancelReport {
+  background-color: var(--danger);
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  padding: 5px;
+  margin: 5px;
+  color: white;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

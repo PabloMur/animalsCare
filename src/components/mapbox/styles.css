@@ -1,0 +1,31 @@
+.container {
+  position: relative;
+}
+.root {
+  height: 80vh;
+  width: 90%;
+  margin: 5vh auto;
+  border-radius: 25px;
+  animation: fadein 1.5s ease;
+}
+
+.reportMap {
+  height: 400px;
+  width: 100%;
+  margin: 0;
+  border-radius: 4px;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.mapboxgl-popup-content {
+  background-color: #ffffff00 !important;
+}

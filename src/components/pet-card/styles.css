@@ -1,0 +1,33 @@
+.root {
+  background-color: var(--clarito);
+  max-width: 250px;
+  min-height: 30vh;
+  border-radius: 4px;
+  margin: 10px;
+}
+.imageContainer {
+  min-height: 25vh;
+  border-radius: 4px;
+  width: 100%;
+  overflow: hidden;
+}
+.petDataContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.infoButton {
+  color: white;
+  background-color: black;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  min-width: 100%;
+}

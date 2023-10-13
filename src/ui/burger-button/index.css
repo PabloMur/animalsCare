@@ -1,0 +1,44 @@
+.root {
+  height: 7vh;
+  width: 7vh;
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .root {
+    display: block;
+  }
+}
+
+.trilineContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.crosslineContainer {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.cross {
+  background-color: var(--clarito);
+  border-radius: 3px;
+}
+
+.customButton {
+  background-color: var(--purple);
+  border: none;
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .customButton {
+    display: block;
+  }
+}
